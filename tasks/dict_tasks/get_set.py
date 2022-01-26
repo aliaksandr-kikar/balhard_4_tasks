@@ -10,8 +10,11 @@ from typing import Any
 
 
 def get_or_set(collection: dict, key: Any) -> Any:
-    # TODO вставить код сюда
-    result = None
+    if key not in collection:
+        collection[key] = 3
+        result = collection.get(key)
+    else:
+        result = collection.get(key)
     return result
 
 

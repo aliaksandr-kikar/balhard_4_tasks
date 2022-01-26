@@ -24,8 +24,10 @@ def is_connected(p_list: list, user: Any) -> bool:
     :param user: пользователь
     :return: True или False
     """
-    # TODO вставить код сюда
-    result = None
+    if user in p_list:
+        result = True
+    else:
+        result = False
     return result
 
 
